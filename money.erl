@@ -22,9 +22,11 @@ loop(MasterPid,CustomersListLength,CustomerTasksFinisedCounter,CustomerOutputLis
         CustomerTasksFinisedCounter =:= CustomersListLength ->
             io:format("** Banking Report ** ~n"),
             io:format("~n Customers: ~n"),
-            print_list(CustomerOutputList,0,0),
+            ReverseCustomerOutputList = lists:reverse(CustomerOutputList),
+            print_list(ReverseCustomerOutputList,0,0),
 
-            BankListUpdated = exitBankProcesses(BankInfo,[]),
+            ReverseBankInfoList = lists:reverse(BankInfo),
+            BankListUpdated = exitBankProcesses(ReverseBankInfoList,[]),
             io:format("~n Banks: ~n"),
             print_Bank_list(BankListUpdated,0,0);
         true ->
