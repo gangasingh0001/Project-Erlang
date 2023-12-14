@@ -64,6 +64,7 @@ This project implements a Loan Management System using concurrent programming in
 
 ```bash
 money:start(["customer_info.txt", "bank_info.txt"]).
+```
 Observe the loan approval/denial logs and final banking reports printed by the system.
 Input Files
 
@@ -75,4 +76,4 @@ The system employs Erlang's concurrent programming features, with each customer 
 Communication between processes is managed through message passing.
 The system utilizes random delays and amounts for a realistic simulation of loan requests.
 Disclaimer: This project is a simulated system and may not accurately represent real-world banking processes.
-```
+
