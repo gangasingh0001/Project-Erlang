@@ -28,10 +28,6 @@ This project implements a Loan Management System using concurrent programming in
 ```bash
 money:start(["customer_info.txt", "bank_info.txt"]).
 
-
-ChatGPT
-Certainly! Below is a template for a GitHub README in markdown format:
-
 markdown
 Copy code
 # Loan Management System
